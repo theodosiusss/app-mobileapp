@@ -1,0 +1,1 @@
+export const backgroundColor: string = 'bg-yellow-300';

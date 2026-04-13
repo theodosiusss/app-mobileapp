@@ -16,8 +16,14 @@ export default function Index() {
                 <GameCard
                     title="Lustiges Fragen Spiel"
                     color="bg-pink-400"
-                    text="ayal ecken"
+                    text="stelle Fragen jaja"
                     onPress={() => router.push("/questionGameMenu")}
+                />
+                <GameCard
+                    title="Lustiges Bussi Spiel"
+                    color="bg-red-700"
+                    text="Ihr Checkt "
+                    onPress={() => router.push("/kissingGameMenu")}
                 />
                 <GoofyButton
                     label="Gruppen Bearbeiten"

@@ -25,6 +25,12 @@ export default function Index() {
                     text="Ihr Checkt "
                     onPress={() => router.push("/kissingGameMenu")}
                 />
+                <GameCard
+                    title="Sigma Wer bin Ich Spiel"
+                    color="bg-orange-500"
+                    text="Ihr Checkt "
+                    onPress={() => router.push("/whoAmI")}
+                />
                 <GoofyButton
                     label="Gruppen Bearbeiten"
                     onPress={() => router.push("/memberMenu")}

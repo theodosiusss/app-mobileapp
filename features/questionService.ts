@@ -1,4 +1,3 @@
-// services/questionService.ts
 import * as SQLite from 'expo-sqlite';
 
 export interface Question {
@@ -110,10 +109,10 @@ export const deleteQuestion = async (id: number): Promise<boolean> => {
     try {
         await initDatabase();
         await db.runAsync('DELETE FROM questions WHERE id = ?;', id);
-        console.log(`✅ Frage mit ID ${id} wurde gelöscht`);
+        console.log(`Frage mit ID ${id} wurde gelöscht`);
         return true;
     } catch (error) {
-        console.error('❌ Fehler beim Löschen der Frage:', error);
+        console.error('Fehler beim Löschen der Frage:', error);
         return false;
     }
 };
